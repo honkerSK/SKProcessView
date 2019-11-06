@@ -1,7 +1,7 @@
 # SKProcessView
 简单的进程视图
 
-
+![SKProcessView.png](https://github.com/honkerSK/SKProcessView/blob/master/SKProcessView.png)
 <img src="https://github.com/honkerSK/SKProcessView/blob/master/SKProcessView.png" width="500" alt="SKProcessView"></img>
 
 ## SKProcessView使用方法
