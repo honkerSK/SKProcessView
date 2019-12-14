@@ -35,14 +35,14 @@
 - (void)setSelectIndex:(NSInteger)selectIndex{
     _selectIndex = selectIndex;
     [self.processViewArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (idx == selectIndex) {
-            SKProcessSubView *processViewFirst = self.processViewArr[selectIndex];
-            processViewFirst.type = SKProcessTypeCurrent;
-            *stop = YES;
-            return ;
+        SKProcessSubView *processView = self.processViewArr[idx];
+        if(idx < selectIndex){ //完毕
+            processView.type = SKProcessTypeFinish;
+        }else if(idx == selectIndex){ //进行中
+            processView.type = SKProcessTypeCurrent;
+        }else{ //未进行
+            processView.type = SKProcessTypeNone;
         }
-        SKProcessSubView *processViewFirst = self.processViewArr[idx];
-        processViewFirst.type = SKProcessTypeFinish;
     }];
     
 }
