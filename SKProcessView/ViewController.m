@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.view.backgroundColor = [UIColor orangeColor];
     SKProcessView *processView = [[SKProcessView alloc] initWithFrame:CGRectMake(0, 100, nScreenWidth, 32)];
     processView.backgroundColor = SKRGB(249, 249, 249);
     [self.view addSubview:processView];

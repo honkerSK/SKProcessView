@@ -2,7 +2,7 @@
 简单的进程视图
 
 
-<img src="./img/SKProcessView.png" style="zoom:100%; width=300;"  alt="SKProcessView"></img>
+<img src="./img/SKProcessView2.png" style="zoom:100%; width=300;"  alt="SKProcessView"></img>
 
 ## SKProcessView使用方法
 
